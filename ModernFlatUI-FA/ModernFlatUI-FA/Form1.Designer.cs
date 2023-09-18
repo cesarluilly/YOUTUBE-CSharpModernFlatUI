@@ -39,15 +39,21 @@
             panelLogo = new Panel();
             btnHome = new PictureBox();
             panelTitleBar = new Panel();
+            iconButtonMinimize = new FontAwesome.Sharp.IconButton();
+            iconButtonMaximize = new FontAwesome.Sharp.IconButton();
+            iconButtonClose = new FontAwesome.Sharp.IconButton();
             lbTitleChildForm = new Label();
             iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             panelShadow = new Panel();
             panelDesktop = new Panel();
+            pictureBox1 = new PictureBox();
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnHome).BeginInit();
             panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconCurrentChildForm).BeginInit();
+            panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panelMenu
@@ -221,6 +227,9 @@
             // panelTitleBar
             // 
             panelTitleBar.BackColor = Color.FromArgb(26, 25, 62);
+            panelTitleBar.Controls.Add(iconButtonMinimize);
+            panelTitleBar.Controls.Add(iconButtonMaximize);
+            panelTitleBar.Controls.Add(iconButtonClose);
             panelTitleBar.Controls.Add(lbTitleChildForm);
             panelTitleBar.Controls.Add(iconCurrentChildForm);
             panelTitleBar.Dock = DockStyle.Top;
@@ -229,6 +238,57 @@
             panelTitleBar.Size = new Size(580, 80);
             panelTitleBar.TabIndex = 1;
             panelTitleBar.MouseDown += panelTitleBar_MouseDown;
+            // 
+            // iconButtonMinimize
+            // 
+            iconButtonMinimize.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconButtonMinimize.BackColor = Color.Transparent;
+            iconButtonMinimize.FlatStyle = FlatStyle.Flat;
+            iconButtonMinimize.ForeColor = Color.Gainsboro;
+            iconButtonMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            iconButtonMinimize.IconColor = Color.Gainsboro;
+            iconButtonMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButtonMinimize.IconSize = 30;
+            iconButtonMinimize.Location = new Point(421, 12);
+            iconButtonMinimize.Name = "iconButtonMinimize";
+            iconButtonMinimize.Size = new Size(45, 23);
+            iconButtonMinimize.TabIndex = 4;
+            iconButtonMinimize.UseVisualStyleBackColor = false;
+            iconButtonMinimize.Click += iconButtonMinimize_Click;
+            // 
+            // iconButtonMaximize
+            // 
+            iconButtonMaximize.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconButtonMaximize.BackColor = Color.Transparent;
+            iconButtonMaximize.FlatStyle = FlatStyle.Flat;
+            iconButtonMaximize.ForeColor = Color.Gainsboro;
+            iconButtonMaximize.IconChar = FontAwesome.Sharp.IconChar.Maximize;
+            iconButtonMaximize.IconColor = Color.Gainsboro;
+            iconButtonMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButtonMaximize.IconSize = 30;
+            iconButtonMaximize.Location = new Point(472, 12);
+            iconButtonMaximize.Name = "iconButtonMaximize";
+            iconButtonMaximize.Size = new Size(45, 23);
+            iconButtonMaximize.TabIndex = 3;
+            iconButtonMaximize.UseVisualStyleBackColor = false;
+            iconButtonMaximize.Click += iconButtonMaximize_Click;
+            // 
+            // iconButtonClose
+            // 
+            iconButtonClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconButtonClose.BackColor = Color.Transparent;
+            iconButtonClose.FlatStyle = FlatStyle.Flat;
+            iconButtonClose.ForeColor = Color.Gainsboro;
+            iconButtonClose.IconChar = FontAwesome.Sharp.IconChar.X;
+            iconButtonClose.IconColor = Color.Gainsboro;
+            iconButtonClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButtonClose.IconSize = 30;
+            iconButtonClose.Location = new Point(523, 12);
+            iconButtonClose.Name = "iconButtonClose";
+            iconButtonClose.Size = new Size(45, 23);
+            iconButtonClose.TabIndex = 2;
+            iconButtonClose.UseVisualStyleBackColor = false;
+            iconButtonClose.Click += iconButtonClose_Click;
             // 
             // lbTitleChildForm
             // 
@@ -266,11 +326,24 @@
             // panelDesktop
             // 
             panelDesktop.BackColor = Color.FromArgb(34, 33, 74);
+            panelDesktop.Controls.Add(pictureBox1);
             panelDesktop.Dock = DockStyle.Fill;
             panelDesktop.Location = new Point(220, 89);
             panelDesktop.Name = "panelDesktop";
             panelDesktop.Size = new Size(580, 431);
             panelDesktop.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.None;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(201, 166);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(178, 98);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click_1;
             // 
             // Form1
             // 
@@ -290,6 +363,8 @@
             panelTitleBar.ResumeLayout(false);
             panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconCurrentChildForm).EndInit();
+            panelDesktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -309,5 +384,9 @@
         private Label lbTitleChildForm;
         private Panel panelShadow;
         private Panel panelDesktop;
+        private PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton iconButtonClose;
+        private FontAwesome.Sharp.IconButton iconButtonMaximize;
+        private FontAwesome.Sharp.IconButton iconButtonMinimize;
     }
 }

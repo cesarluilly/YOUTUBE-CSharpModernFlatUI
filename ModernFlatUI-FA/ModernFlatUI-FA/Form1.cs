@@ -10,7 +10,9 @@ namespace ModernFlatUI_FA
         //Comentario para que sea responsivo.
         //Tamaño Formulatio Hijo = Tamaño Panel Contenedor de Form + 
         //  Establecer la propiedad Anchor y Dock de los controles adecuadamente.
-       
+
+        //Utilizamos la propiedad anchor para la parte responsiva.
+
         //                                                  //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
@@ -102,11 +104,11 @@ namespace ModernFlatUI_FA
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            panelDesktop.Controls.Add( childForm );
+            panelDesktop.Controls.Add(childForm);
             panelDesktop.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            lbTitleChildForm.Text = childForm.Text; 
+            lbTitleChildForm.Text = childForm.Text;
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -183,6 +185,35 @@ namespace ModernFlatUI_FA
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButtonClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void iconButtonMaximize_Click(object sender, EventArgs e)
+        {
+            if (
+                WindowState == FormWindowState.Normal
+                )
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void iconButtonMinimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }
