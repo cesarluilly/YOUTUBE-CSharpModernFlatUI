@@ -53,7 +53,7 @@ namespace ModernFlatUI_FA
         }
 
         //--------------------------------------------------------------------------------------------------------------
-        public  void DisableButton(
+        public void DisableButton(
            //                                              //descriptionMethod
 
            )
@@ -73,7 +73,32 @@ namespace ModernFlatUI_FA
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color1);
+        }
 
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color2);
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color4);
+        }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color5);
+        }
+
+        private void iconButton6_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
         }
     }
 }
