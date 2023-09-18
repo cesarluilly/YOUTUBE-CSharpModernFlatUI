@@ -40,6 +40,7 @@
             btnHome = new PictureBox();
             panelTitleBar = new Panel();
             iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            lbTitleChildForm = new Label();
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnHome).BeginInit();
@@ -218,6 +219,7 @@
             // panelTitleBar
             // 
             panelTitleBar.BackColor = Color.FromArgb(26, 25, 62);
+            panelTitleBar.Controls.Add(lbTitleChildForm);
             panelTitleBar.Controls.Add(iconCurrentChildForm);
             panelTitleBar.Dock = DockStyle.Top;
             panelTitleBar.Location = new Point(220, 0);
@@ -239,6 +241,16 @@
             iconCurrentChildForm.TabStop = false;
             iconCurrentChildForm.Click += iconCurrentChildForm_Click;
             // 
+            // lbTitleChildForm
+            // 
+            lbTitleChildForm.AutoSize = true;
+            lbTitleChildForm.ForeColor = Color.Gainsboro;
+            lbTitleChildForm.Location = new Point(58, 36);
+            lbTitleChildForm.Name = "lbTitleChildForm";
+            lbTitleChildForm.Size = new Size(40, 15);
+            lbTitleChildForm.TabIndex = 1;
+            lbTitleChildForm.Text = "Home";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -252,6 +264,7 @@
             panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnHome).EndInit();
             panelTitleBar.ResumeLayout(false);
+            panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconCurrentChildForm).EndInit();
             ResumeLayout(false);
         }
@@ -269,5 +282,6 @@
         private PictureBox btnHome;
         private Panel panelTitleBar;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
+        private Label lbTitleChildForm;
     }
 }

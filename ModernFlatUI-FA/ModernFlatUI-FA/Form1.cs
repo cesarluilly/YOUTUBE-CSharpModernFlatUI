@@ -49,6 +49,10 @@ namespace ModernFlatUI_FA
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y/*Ubicacion actual del boton*/);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
+
+                //Icon current child form
+                iconCurrentChildForm.IconChar = currentBtn.IconChar;
+                iconCurrentChildForm.IconColor = color;
             }
         }
 
@@ -110,6 +114,10 @@ namespace ModernFlatUI_FA
         {
             DisableButton();
             leftBorderBtn.Visible = false;
+            //                                              //Valores por defecto.
+            iconCurrentChildForm.IconChar = IconChar.Home;
+            iconCurrentChildForm.IconColor = Color.MediumPurple;
+            lbTitleChildForm.Text = "Home";
         }
 
         private void iconCurrentChildForm_Click(object sender, EventArgs e)
