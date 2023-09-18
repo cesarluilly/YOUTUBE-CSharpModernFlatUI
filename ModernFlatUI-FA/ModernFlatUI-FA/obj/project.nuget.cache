@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "d2v1UG/WJhuTGGn7Bz/G9wADlYjUWTaCL4cbl/xQIsur1YQ3vMHIMM64DEpeD3jxUpVTH/y8uFOAXrUVIHr+Fw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Cesar Garcia\\source\\reposFormCSharp\\YOUTUBE-CSharpModernFlatUI\\ModernFlatUI-FA\\ModernFlatUI-FA\\ModernFlatUI-FA.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cesar Garcia\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
