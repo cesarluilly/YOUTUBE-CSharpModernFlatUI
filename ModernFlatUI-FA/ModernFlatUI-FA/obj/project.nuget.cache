@@ -1,10 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "d2v1UG/WJhuTGGn7Bz/G9wADlYjUWTaCL4cbl/xQIsur1YQ3vMHIMM64DEpeD3jxUpVTH/y8uFOAXrUVIHr+Fw==",
+  "dgSpecHash": "sc8TxIjwne9mmOnvtiNHkGwmPGoTnQX4Q5w1AHlBRH0UoXFV2WCyjgeaz5hSfILZolFwpm/sI+vGE+jR2D1zYA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Cesar Garcia\\source\\reposFormCSharp\\YOUTUBE-CSharpModernFlatUI\\ModernFlatUI-FA\\ModernFlatUI-FA\\ModernFlatUI-FA.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Cesar Garcia\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
+    "C:\\Users\\Cesar Garcia\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
+    "C:\\Users\\Cesar Garcia\\.nuget\\packages\\materialskin\\0.2.1\\materialskin.0.2.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MaterialSkin 0.2.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "MaterialSkin",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }
