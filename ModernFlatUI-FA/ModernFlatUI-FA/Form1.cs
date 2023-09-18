@@ -8,6 +8,7 @@ namespace ModernFlatUI_FA
         //                                                  //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
+        private Form currentChildForm;
 
         //                                                  //Constructor.
         public Form1()
@@ -79,6 +80,22 @@ namespace ModernFlatUI_FA
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
+        }
+
+        private void OpenChildForm(Form childForm)
+        {
+            if (
+                iconCurrentChildForm != null
+                )
+            {
+                //Al abrir un formulario, cerramos el formulario anterior.
+                currentChildForm.Close();
+            }
+
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
