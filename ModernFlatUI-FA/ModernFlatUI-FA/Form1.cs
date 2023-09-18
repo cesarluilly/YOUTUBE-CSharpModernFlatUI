@@ -1,4 +1,5 @@
 using FontAwesome.Sharp;
+using ModernFlatUI_FA.Forms;
 using System.Runtime.InteropServices;
 
 namespace ModernFlatUI_FA
@@ -85,7 +86,7 @@ namespace ModernFlatUI_FA
         private void OpenChildForm(Form childForm)
         {
             if (
-                iconCurrentChildForm != null
+                currentChildForm != null
                 )
             {
                 //Al abrir un formulario, cerramos el formulario anterior.
@@ -106,6 +107,7 @@ namespace ModernFlatUI_FA
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormDashboard());
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
