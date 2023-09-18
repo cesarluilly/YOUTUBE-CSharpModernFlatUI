@@ -261,6 +261,7 @@
             Controls.Add(panelMenu);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             panelMenu.ResumeLayout(false);
             panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnHome).EndInit();

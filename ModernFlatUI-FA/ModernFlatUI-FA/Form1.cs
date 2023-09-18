@@ -17,7 +17,12 @@ namespace ModernFlatUI_FA
             leftBorderBtn.Size = new Size(7, 60);
 
             panelMenu.Controls.Add(leftBorderBtn);
-
+            //Form
+            this.Text = String.Empty;
+            this.ControlBox = false;
+            //Agregamos doble buffer para reducir el parpadeo en los graficos del formulario..
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         private struct RGBColors
@@ -138,6 +143,11 @@ namespace ModernFlatUI_FA
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
