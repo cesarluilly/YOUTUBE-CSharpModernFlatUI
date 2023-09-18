@@ -74,6 +74,7 @@
             iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
             iconButton1.Location = new Point(0, 140);
             iconButton1.Name = "iconButton1";
+            iconButton1.Padding = new Padding(10, 0, 20, 0);
             iconButton1.Size = new Size(220, 60);
             iconButton1.TabIndex = 1;
             iconButton1.Text = "Dashboard";
@@ -94,6 +95,7 @@
             iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
             iconButton2.Location = new Point(0, 200);
             iconButton2.Name = "iconButton2";
+            iconButton2.Padding = new Padding(10, 0, 20, 0);
             iconButton2.Size = new Size(220, 60);
             iconButton2.TabIndex = 2;
             iconButton2.Text = "Orders";
@@ -114,6 +116,7 @@
             iconButton3.ImageAlign = ContentAlignment.MiddleLeft;
             iconButton3.Location = new Point(0, 260);
             iconButton3.Name = "iconButton3";
+            iconButton3.Padding = new Padding(10, 0, 20, 0);
             iconButton3.Size = new Size(220, 60);
             iconButton3.TabIndex = 3;
             iconButton3.Text = "Product";
@@ -134,6 +137,7 @@
             iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
             iconButton4.Location = new Point(0, 320);
             iconButton4.Name = "iconButton4";
+            iconButton4.Padding = new Padding(10, 0, 20, 0);
             iconButton4.Size = new Size(220, 60);
             iconButton4.TabIndex = 4;
             iconButton4.Text = "Customers";
@@ -154,6 +158,7 @@
             iconButton5.ImageAlign = ContentAlignment.MiddleLeft;
             iconButton5.Location = new Point(0, 380);
             iconButton5.Name = "iconButton5";
+            iconButton5.Padding = new Padding(10, 0, 20, 0);
             iconButton5.Size = new Size(220, 60);
             iconButton5.TabIndex = 5;
             iconButton5.Text = "Marketing";
