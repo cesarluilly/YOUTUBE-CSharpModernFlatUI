@@ -39,8 +39,8 @@
             panelLogo = new Panel();
             btnHome = new PictureBox();
             panelTitleBar = new Panel();
-            iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             lbTitleChildForm = new Label();
+            iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnHome).BeginInit();
@@ -226,6 +226,17 @@
             panelTitleBar.Name = "panelTitleBar";
             panelTitleBar.Size = new Size(580, 80);
             panelTitleBar.TabIndex = 1;
+            panelTitleBar.MouseDown += panelTitleBar_MouseDown;
+            // 
+            // lbTitleChildForm
+            // 
+            lbTitleChildForm.AutoSize = true;
+            lbTitleChildForm.ForeColor = Color.Gainsboro;
+            lbTitleChildForm.Location = new Point(58, 36);
+            lbTitleChildForm.Name = "lbTitleChildForm";
+            lbTitleChildForm.Size = new Size(40, 15);
+            lbTitleChildForm.TabIndex = 1;
+            lbTitleChildForm.Text = "Home";
             // 
             // iconCurrentChildForm
             // 
@@ -240,16 +251,6 @@
             iconCurrentChildForm.TabIndex = 0;
             iconCurrentChildForm.TabStop = false;
             iconCurrentChildForm.Click += iconCurrentChildForm_Click;
-            // 
-            // lbTitleChildForm
-            // 
-            lbTitleChildForm.AutoSize = true;
-            lbTitleChildForm.ForeColor = Color.Gainsboro;
-            lbTitleChildForm.Location = new Point(58, 36);
-            lbTitleChildForm.Name = "lbTitleChildForm";
-            lbTitleChildForm.Size = new Size(40, 15);
-            lbTitleChildForm.TabIndex = 1;
-            lbTitleChildForm.Text = "Home";
             // 
             // Form1
             // 
