@@ -103,7 +103,13 @@ namespace ModernFlatUI_FA
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            Reset();
+        }
 
+        private void Reset()
+        {
+            DisableButton();
+            leftBorderBtn.Visible = false;
         }
     }
 }

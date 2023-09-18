@@ -37,10 +37,11 @@
             iconButton2 = new FontAwesome.Sharp.IconButton();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             panelLogo = new Panel();
-            pictureBox1 = new PictureBox();
+            btnHome = new PictureBox();
+            panelTitleBar = new Panel();
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnHome).BeginInit();
             SuspendLayout();
             // 
             // panelMenu
@@ -193,35 +194,45 @@
             // 
             // panelLogo
             // 
-            panelLogo.Controls.Add(pictureBox1);
+            panelLogo.Controls.Add(btnHome);
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
             panelLogo.Name = "panelLogo";
             panelLogo.Size = new Size(220, 140);
             panelLogo.TabIndex = 0;
             // 
-            // pictureBox1
+            // btnHome
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(22, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(178, 98);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            btnHome.Image = (Image)resources.GetObject("btnHome.Image");
+            btnHome.Location = new Point(22, 12);
+            btnHome.Name = "btnHome";
+            btnHome.Size = new Size(178, 98);
+            btnHome.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnHome.TabIndex = 0;
+            btnHome.TabStop = false;
+            btnHome.Click += pictureBox1_Click;
+            // 
+            // panelTitleBar
+            // 
+            panelTitleBar.BackColor = Color.FromArgb(26, 25, 62);
+            panelTitleBar.Dock = DockStyle.Top;
+            panelTitleBar.Location = new Point(220, 0);
+            panelTitleBar.Name = "panelTitleBar";
+            panelTitleBar.Size = new Size(580, 80);
+            panelTitleBar.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 520);
+            Controls.Add(panelTitleBar);
             Controls.Add(panelMenu);
             Name = "Form1";
             Text = "Form1";
             panelMenu.ResumeLayout(false);
             panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnHome).EndInit();
             ResumeLayout(false);
         }
 
@@ -235,6 +246,7 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton6;
-        private PictureBox pictureBox1;
+        private PictureBox btnHome;
+        private Panel panelTitleBar;
     }
 }
