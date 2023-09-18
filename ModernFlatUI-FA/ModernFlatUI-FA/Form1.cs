@@ -6,6 +6,11 @@ namespace ModernFlatUI_FA
 {
     public partial class Form1 : Form
     {
+
+        //Comentario para que sea responsivo.
+        //Tamaño Formulatio Hijo = Tamaño Panel Contenedor de Form + 
+        //  Establecer la propiedad Anchor y Dock de los controles adecuadamente.
+       
         //                                                  //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
@@ -142,6 +147,7 @@ namespace ModernFlatUI_FA
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            currentChildForm.Close();
             Reset();
         }
 
