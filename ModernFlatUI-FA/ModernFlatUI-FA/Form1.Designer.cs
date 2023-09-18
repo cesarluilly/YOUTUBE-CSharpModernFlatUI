@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             panelMenu = new Panel();
+            iconButton6 = new FontAwesome.Sharp.IconButton();
             iconButton5 = new FontAwesome.Sharp.IconButton();
             iconButton4 = new FontAwesome.Sharp.IconButton();
             iconButton3 = new FontAwesome.Sharp.IconButton();
             iconButton2 = new FontAwesome.Sharp.IconButton();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             panelLogo = new Panel();
-            iconButton6 = new FontAwesome.Sharp.IconButton();
             panelMenu.SuspendLayout();
             SuspendLayout();
             // 
@@ -54,6 +54,27 @@
             panelMenu.Name = "panelMenu";
             panelMenu.Size = new Size(220, 520);
             panelMenu.TabIndex = 0;
+            // 
+            // iconButton6
+            // 
+            iconButton6.Dock = DockStyle.Top;
+            iconButton6.FlatAppearance.BorderSize = 0;
+            iconButton6.FlatStyle = FlatStyle.Flat;
+            iconButton6.ForeColor = Color.Gainsboro;
+            iconButton6.IconChar = FontAwesome.Sharp.IconChar.Tools;
+            iconButton6.IconColor = Color.Gainsboro;
+            iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton6.IconSize = 32;
+            iconButton6.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton6.Location = new Point(0, 440);
+            iconButton6.Name = "iconButton6";
+            iconButton6.Padding = new Padding(10, 0, 20, 0);
+            iconButton6.Size = new Size(220, 60);
+            iconButton6.TabIndex = 6;
+            iconButton6.Text = "Settings";
+            iconButton6.TextAlign = ContentAlignment.MiddleLeft;
+            iconButton6.TextImageRelation = TextImageRelation.ImageBeforeText;
+            iconButton6.UseVisualStyleBackColor = true;
             // 
             // iconButton5
             // 
@@ -159,6 +180,7 @@
             iconButton1.TextAlign = ContentAlignment.MiddleLeft;
             iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton1.UseVisualStyleBackColor = true;
+            iconButton1.Click += iconButton1_Click;
             // 
             // panelLogo
             // 
@@ -167,27 +189,6 @@
             panelLogo.Name = "panelLogo";
             panelLogo.Size = new Size(220, 140);
             panelLogo.TabIndex = 0;
-            // 
-            // iconButton6
-            // 
-            iconButton6.Dock = DockStyle.Top;
-            iconButton6.FlatAppearance.BorderSize = 0;
-            iconButton6.FlatStyle = FlatStyle.Flat;
-            iconButton6.ForeColor = Color.Gainsboro;
-            iconButton6.IconChar = FontAwesome.Sharp.IconChar.Tools;
-            iconButton6.IconColor = Color.Gainsboro;
-            iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton6.IconSize = 32;
-            iconButton6.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton6.Location = new Point(0, 440);
-            iconButton6.Name = "iconButton6";
-            iconButton6.Padding = new Padding(10, 0, 20, 0);
-            iconButton6.Size = new Size(220, 60);
-            iconButton6.TabIndex = 6;
-            iconButton6.Text = "Settings";
-            iconButton6.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton6.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton6.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
