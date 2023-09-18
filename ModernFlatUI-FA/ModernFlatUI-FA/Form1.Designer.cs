@@ -39,9 +39,12 @@
             panelLogo = new Panel();
             btnHome = new PictureBox();
             panelTitleBar = new Panel();
+            iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnHome).BeginInit();
+            panelTitleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)iconCurrentChildForm).BeginInit();
             SuspendLayout();
             // 
             // panelMenu
@@ -215,11 +218,26 @@
             // panelTitleBar
             // 
             panelTitleBar.BackColor = Color.FromArgb(26, 25, 62);
+            panelTitleBar.Controls.Add(iconCurrentChildForm);
             panelTitleBar.Dock = DockStyle.Top;
             panelTitleBar.Location = new Point(220, 0);
             panelTitleBar.Name = "panelTitleBar";
             panelTitleBar.Size = new Size(580, 80);
             panelTitleBar.TabIndex = 1;
+            // 
+            // iconCurrentChildForm
+            // 
+            iconCurrentChildForm.BackColor = Color.FromArgb(26, 25, 62);
+            iconCurrentChildForm.ForeColor = Color.MediumPurple;
+            iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.House;
+            iconCurrentChildForm.IconColor = Color.MediumPurple;
+            iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconCurrentChildForm.Location = new Point(15, 26);
+            iconCurrentChildForm.Name = "iconCurrentChildForm";
+            iconCurrentChildForm.Size = new Size(32, 32);
+            iconCurrentChildForm.TabIndex = 0;
+            iconCurrentChildForm.TabStop = false;
+            iconCurrentChildForm.Click += iconCurrentChildForm_Click;
             // 
             // Form1
             // 
@@ -233,6 +251,8 @@
             panelMenu.ResumeLayout(false);
             panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnHome).EndInit();
+            panelTitleBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)iconCurrentChildForm).EndInit();
             ResumeLayout(false);
         }
 
@@ -248,5 +268,6 @@
         private FontAwesome.Sharp.IconButton iconButton6;
         private PictureBox btnHome;
         private Panel panelTitleBar;
+        private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
     }
 }

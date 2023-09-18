@@ -111,5 +111,10 @@ namespace ModernFlatUI_FA
             DisableButton();
             leftBorderBtn.Visible = false;
         }
+
+        private void iconCurrentChildForm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
