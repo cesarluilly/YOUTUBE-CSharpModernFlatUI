@@ -42,6 +42,7 @@
             lbTitleChildForm = new Label();
             iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             panelShadow = new Panel();
+            panelDesktop = new Panel();
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnHome).BeginInit();
@@ -262,11 +263,21 @@
             panelShadow.Size = new Size(580, 9);
             panelShadow.TabIndex = 2;
             // 
+            // panelDesktop
+            // 
+            panelDesktop.BackColor = Color.FromArgb(34, 33, 74);
+            panelDesktop.Dock = DockStyle.Fill;
+            panelDesktop.Location = new Point(220, 89);
+            panelDesktop.Name = "panelDesktop";
+            panelDesktop.Size = new Size(580, 431);
+            panelDesktop.TabIndex = 3;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 520);
+            Controls.Add(panelDesktop);
             Controls.Add(panelShadow);
             Controls.Add(panelTitleBar);
             Controls.Add(panelMenu);
@@ -297,5 +308,6 @@
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private Label lbTitleChildForm;
         private Panel panelShadow;
+        private Panel panelDesktop;
     }
 }

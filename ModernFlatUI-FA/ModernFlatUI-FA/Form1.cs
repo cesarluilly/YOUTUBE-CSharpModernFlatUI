@@ -96,6 +96,11 @@ namespace ModernFlatUI_FA
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
+            panelDesktop.Controls.Add( childForm );
+            panelDesktop.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+            lbTitleChildForm.Text = childForm.Text; 
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
