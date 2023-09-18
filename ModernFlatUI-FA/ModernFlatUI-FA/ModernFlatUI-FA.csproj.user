@@ -7,7 +7,22 @@
     <Compile Update="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FormCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\FormDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormMarketing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormSetting.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

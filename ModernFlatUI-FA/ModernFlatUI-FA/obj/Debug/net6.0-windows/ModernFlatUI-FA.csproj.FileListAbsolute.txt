@@ -20,3 +20,8 @@ C:\Users\Cesar Garcia\source\reposFormCSharp\YOUTUBE-CSharpModernFlatUI\ModernFl
 C:\Users\Cesar Garcia\source\reposFormCSharp\YOUTUBE-CSharpModernFlatUI\ModernFlatUI-FA\ModernFlatUI-FA\obj\Debug\net6.0-windows\ModernFlatUI_FA.Properties.Resources.resources
 C:\Users\Cesar Garcia\source\reposFormCSharp\YOUTUBE-CSharpModernFlatUI\ModernFlatUI-FA\ModernFlatUI-FA\obj\Debug\net6.0-windows\ModernFlatUI_FA.Forms.Form1.resources
 C:\Users\Cesar Garcia\source\reposFormCSharp\YOUTUBE-CSharpModernFlatUI\ModernFlatUI-FA\ModernFlatUI-FA\obj\Debug\net6.0-windows\ModernFlatUI_FA.Forms.FormDashboard.resources
+C:\Users\Cesar Garcia\source\reposFormCSharp\YOUTUBE-CSharpModernFlatUI\ModernFlatUI-FA\ModernFlatUI-FA\obj\Debug\net6.0-windows\ModernFlatUI_FA.Forms.FormCustomer.resources
+C:\Users\Cesar Garcia\source\reposFormCSharp\YOUTUBE-CSharpModernFlatUI\ModernFlatUI-FA\ModernFlatUI-FA\obj\Debug\net6.0-windows\ModernFlatUI_FA.Forms.FormMarketing.resources
+C:\Users\Cesar Garcia\source\reposFormCSharp\YOUTUBE-CSharpModernFlatUI\ModernFlatUI-FA\ModernFlatUI-FA\obj\Debug\net6.0-windows\ModernFlatUI_FA.Forms.FormOrders.resources
+C:\Users\Cesar Garcia\source\reposFormCSharp\YOUTUBE-CSharpModernFlatUI\ModernFlatUI-FA\ModernFlatUI-FA\obj\Debug\net6.0-windows\ModernFlatUI_FA.Forms.FormProducts.resources
+C:\Users\Cesar Garcia\source\reposFormCSharp\YOUTUBE-CSharpModernFlatUI\ModernFlatUI-FA\ModernFlatUI-FA\obj\Debug\net6.0-windows\ModernFlatUI_FA.Forms.FormSetting.resources

@@ -1,6 +1,6 @@
 ﻿namespace ModernFlatUI_FA.Forms
 {
-    partial class FormDashboard
+    partial class FormProducts
     {
         /// <summary>
         /// Required designer variable.
@@ -34,20 +34,20 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(30, 36);
+            label1.Location = new Point(59, 30);
             label1.Name = "label1";
-            label1.Size = new Size(64, 15);
+            label1.Size = new Size(54, 15);
             label1.TabIndex = 0;
-            label1.Text = "Dashboard";
+            label1.Text = "Products";
             // 
-            // FormDashboard
+            // FormProducts
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label1);
-            Name = "FormDashboard";
-            Text = "FormDashboard";
+            Name = "FormProducts";
+            Text = "FormProducts";
             ResumeLayout(false);
             PerformLayout();
         }
