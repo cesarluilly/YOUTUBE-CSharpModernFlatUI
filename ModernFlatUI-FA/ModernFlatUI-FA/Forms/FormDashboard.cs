@@ -16,5 +16,10 @@ namespace ModernFlatUI_FA.Forms
         {
             InitializeComponent();
         }
+
+        private void materialMaskedTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

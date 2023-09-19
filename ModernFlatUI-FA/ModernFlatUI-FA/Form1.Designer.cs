@@ -198,7 +198,7 @@
             iconButton1.Padding = new Padding(10, 0, 20, 0);
             iconButton1.Size = new Size(220, 60);
             iconButton1.TabIndex = 1;
-            iconButton1.Text = "Dashboard";
+            iconButton1.Text = "Dashboard/MateriaSkin.2";
             iconButton1.TextAlign = ContentAlignment.MiddleLeft;
             iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton1.UseVisualStyleBackColor = true;

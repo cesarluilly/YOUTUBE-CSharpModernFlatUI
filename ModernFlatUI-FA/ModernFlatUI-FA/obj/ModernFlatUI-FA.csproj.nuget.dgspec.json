@@ -44,13 +44,17 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "Bunifu.UI.WinForms": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "FontAwesome.Sharp": {
               "target": "Package",
               "version": "[6.3.0, )"
             },
-            "MaterialSkin": {
+            "MaterialSkin.2": {
               "target": "Package",
-              "version": "[0.2.1, )"
+              "version": "[2.3.1, )"
             }
           },
           "imports": [
