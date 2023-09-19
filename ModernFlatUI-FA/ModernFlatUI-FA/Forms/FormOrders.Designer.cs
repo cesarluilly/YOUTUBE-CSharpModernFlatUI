@@ -28,12 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormOrders";
+            dgvMatrix = new DataGridView();
+            dgv2 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvMatrix).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgv2).BeginInit();
+            SuspendLayout();
+            // 
+            // dgvMatrix
+            // 
+            dgvMatrix.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvMatrix.Location = new Point(75, 156);
+            dgvMatrix.Name = "dgvMatrix";
+            dgvMatrix.RowTemplate.Height = 25;
+            dgvMatrix.Size = new Size(240, 150);
+            dgvMatrix.TabIndex = 0;
+            dgvMatrix.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // dgv2
+            // 
+            dgv2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv2.Location = new Point(355, 156);
+            dgv2.Name = "dgv2";
+            dgv2.RowTemplate.Height = 25;
+            dgv2.Size = new Size(240, 150);
+            dgv2.TabIndex = 1;
+            dgv2.CellContentClick += dataGridView1_CellContentClick_1;
+            // 
+            // FormOrders
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(dgv2);
+            Controls.Add(dgvMatrix);
+            Name = "FormOrders";
+            Text = "FormOrders";
+            Load += FormOrders_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvMatrix).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgv2).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dgvMatrix;
+        private DataGridView dgv2;
     }
 }
